@@ -6,6 +6,7 @@ import behavioural.observer.RunObserver;
 import behavioural.state.RunState;
 import behavioural.strategy.RunStartegy;
 import behavioural.template.RunTemplate;
+import creational.singleton.RunSingleton;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +19,9 @@ public class Main {
         new RunIterator().run();
         new RunState().run();
         new RunMediator().run();
+
+
+        //Creational Patterns
+        new RunSingleton().run();
     }
 }
