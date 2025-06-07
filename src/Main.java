@@ -6,6 +6,8 @@ import behavioural.observer.RunObserver;
 import behavioural.state.RunState;
 import behavioural.strategy.RunStartegy;
 import behavioural.template.RunTemplate;
+import creational.Factory.RunFactory;
+import creational.builder.RunBuilder;
 import creational.singleton.RunSingleton;
 
 public class Main {
@@ -23,5 +25,7 @@ public class Main {
 
         //Creational Patterns
         new RunSingleton().run();
+        new RunBuilder().run();
+        new RunFactory().run();
     }
 }
