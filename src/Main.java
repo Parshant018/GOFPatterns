@@ -7,6 +7,7 @@ import behavioural.state.RunState;
 import behavioural.strategy.RunStartegy;
 import behavioural.template.RunTemplate;
 import creational.Factory.RunFactory;
+import creational.abstractfactory.RunAbstractFactory;
 import creational.builder.RunBuilder;
 import creational.singleton.RunSingleton;
 
@@ -27,5 +28,6 @@ public class Main {
         new RunSingleton().run();
         new RunBuilder().run();
         new RunFactory().run();
+        RunAbstractFactory.run();
     }
 }
