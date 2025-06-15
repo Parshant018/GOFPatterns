@@ -9,6 +9,7 @@ import behavioural.template.RunTemplate;
 import creational.Factory.RunFactory;
 import creational.abstractfactory.RunAbstractFactory;
 import creational.builder.RunBuilder;
+import creational.prototype.RunPrototype;
 import creational.singleton.RunSingleton;
 
 public class Main {
@@ -29,5 +30,6 @@ public class Main {
         new RunBuilder().run();
         new RunFactory().run();
         RunAbstractFactory.run();
+        new RunPrototype().run();
     }
 }
