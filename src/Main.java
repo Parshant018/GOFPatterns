@@ -11,6 +11,7 @@ import creational.abstractfactory.RunAbstractFactory;
 import creational.builder.RunBuilder;
 import creational.prototype.RunPrototype;
 import creational.singleton.RunSingleton;
+import structural.adapter.RunAdapter;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,5 +32,8 @@ public class Main {
         new RunFactory().run();
         RunAbstractFactory.run();
         new RunPrototype().run();
+
+        //Structural Patterns
+        new RunAdapter().run();
     }
 }
